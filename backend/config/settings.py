@@ -89,7 +89,7 @@ DATABASES = {
         "HOST": os.getenv("POSTGRES_HOST"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
         "OPTIONS": {
-            "sslmode": "disable",
+            "sslmode": "require",
         },
         "CONN_MAX_AGE": 60,
     }
