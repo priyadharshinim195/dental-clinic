@@ -76,10 +76,10 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("postgres", "postgres"),
-        "USER": os.getenv("postgres.dvcxrqrwznwyyiospray"),
-        "PASSWORD": os.getenv("Dentistry-care@123"),
-        "HOST": os.getenv("aws-0-ap-southeast-1.pooler.supabase.com"),
+        "NAME": os.getenv("POSTGRES_DB", "postgres"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": os.getenv("POSTGRES_HOST"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
         "OPTIONS": {
             "sslmode": "require",
