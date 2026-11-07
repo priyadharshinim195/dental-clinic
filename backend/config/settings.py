@@ -28,13 +28,13 @@ if not SECRET_KEY:
     # Debug-only fallback: a random key per process, so no secret is ever committed.
     SECRET_KEY = get_random_string(64)
 
-ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1")
+# ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1")
 
-# ALLOWED_HOSTS = [
-#     "dental-clinic-y0rw.onrender.com",
-#     "localhost",
-#     "127.0.0.1",
-# ]
+ALLOWED_HOSTS = [
+    "dental-clinic-y0rw.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
